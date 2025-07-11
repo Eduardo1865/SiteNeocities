@@ -146,6 +146,16 @@ footer:hover{
     animation-timing-function: ease-in-out;
 }
 
+.voltarpag{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.voltarpag:hover{
+    color: yellow;
+}
+
 @keyframes glow{
     50%{box-shadow: 0px 0px 50px yellow} 
 }
