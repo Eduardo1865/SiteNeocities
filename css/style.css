@@ -149,6 +149,13 @@ footer:hover{
     main,header,footer{
         width: 90%;
     }
+
+    .dropdown .content{
+    
+    bottom:150px;
+    right: 20px;
+    
+    }
     #img2{
         height: 200px;
     }
