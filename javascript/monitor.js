@@ -20,7 +20,7 @@ function selectCaminho(){
         default:
             console.log("nope")
             caminhoImagem.innerHTML = `<img src="../images/monitor.gif" height=120px class="monitorImagem" >`
-            caminhoNome.textContent = `/escreva um caminho valido/`
+            caminhoNome.innerHTML = `<a href="" class="linkCaminho">/escreva um caminho valido/</a>`
             break;
     }
 }

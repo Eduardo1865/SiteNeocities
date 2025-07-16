@@ -49,18 +49,26 @@ body{
     transform: translate(-50%, 250%);
     color: white;
     
+
 }
 
 .linkCaminho{
     color:white;
     text-decoration: none;
     cursor: pointer;
+    opacity: 0;
+    animation-delay: 0.1s;
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards; 
+    
 }
 
 .linkCaminho:hover{
     text-shadow: white 0px 1px 10px,
                 white 0px -1px 10px;
-    transition: box-shadow 0.5s;
+    transition: text-shadow 0.5s;
 }
 
 #textoEspaco{
@@ -121,3 +129,4 @@ body{
 @keyframes fade{
     100%{opacity: 100}
 }
+
