@@ -1,0 +1,73 @@
+body{
+    background-image: url(../images/dither.png); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flow-root;
+    font-family: Tiny5;
+}
+
+#monitorEspaco{
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    
+}
+
+.monitorContainer {
+    position: relative;
+    display: inline-block;
+}
+
+.truemonitor {
+    position: relative;
+    display: block;
+    margin: auto;
+}
+
+.monitorImagem {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    height: 200px;
+    pointer-events: none; /* opcional: evita clique na imagem atrás */
+}
+
+#textoEspaco{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 130%);
+}
+
+#monitorTextBox{
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    border: solid 2px white;
+    font-family: Pixelify Sans;
+    padding: 5px;
+}
+
+#buttonEnviar{
+    color: white;
+    background-color: black;
+    border: solid 2px white;
+    font-family: Pixelify Sans;
+    padding: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.voltarpag{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.voltarpag:hover{
+    color: yellow;
+}
