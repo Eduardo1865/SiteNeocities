@@ -27,6 +27,7 @@ body{
 }
 
 .monitorImagem {
+    cursor: pointer;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -38,6 +39,28 @@ body{
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards; 
     
+}
+
+
+#caminhoNome{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 250%);
+    color: white;
+    
+}
+
+.linkCaminho{
+    color:white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.linkCaminho:hover{
+    text-shadow: white 0px 1px 10px,
+                white 0px -1px 10px;
+    transition: box-shadow 0.5s;
 }
 
 #textoEspaco{
