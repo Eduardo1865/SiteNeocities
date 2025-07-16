@@ -31,8 +31,13 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -80%);
-    height: 200px;
-    pointer-events: none; /* opcional: evita clique na imagem atrás */
+    height: 180px;
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards; 
+    
 }
 
 #textoEspaco{
@@ -62,6 +67,24 @@ body{
     cursor: pointer;
 }
 
+#buttonEnviar:hover{
+    box-shadow: white 0px 1px 10px,
+                white 0px -1px 10px;
+    transition: box-shadow 0.25s;
+}
+
+#monitorTextBox:hover{
+    box-shadow: white 0px 1px 10px,
+                white 0px -1px 10px;
+    transition: box-shadow 0.25s;
+}
+
+#monitorTextBox:focus{
+    box-shadow: white 0px 1px 10px,
+                white 0px -1px 10px;
+    transition: box-shadow 0.25s;
+}
+
 .voltarpag{
     text-decoration: none;
     color: aliceblue;
@@ -70,4 +93,8 @@ body{
 
 .voltarpag:hover{
     color: yellow;
+}
+
+@keyframes fade{
+    100%{opacity: 100}
 }
