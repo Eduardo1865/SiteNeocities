@@ -3,7 +3,7 @@
 function selectCaminho(){
     let monitorTextBox = document.getElementById("monitorTextBox").value;
     const caminhoImagem = document.getElementById("caminhoImagem");
-    const imagem = '';
+    
     
 
     monitorTextBox = monitorTextBox.toLowerCase();

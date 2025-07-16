@@ -70,19 +70,19 @@ body{
 #buttonEnviar:hover{
     box-shadow: white 0px 1px 10px,
                 white 0px -1px 10px;
-    transition: box-shadow 0.25s;
+    transition: box-shadow 0.5s;
 }
 
 #monitorTextBox:hover{
     box-shadow: white 0px 1px 10px,
                 white 0px -1px 10px;
-    transition: box-shadow 0.25s;
+    transition: box-shadow 0.5s;
 }
 
 #monitorTextBox:focus{
     box-shadow: white 0px 1px 10px,
                 white 0px -1px 10px;
-    transition: box-shadow 0.25s;
+    transition: box-shadow 0.5s;
 }
 
 .voltarpag{
