@@ -12,7 +12,7 @@ function selectCaminho(){
         case "esqueleto":
             const value = monitorTextBox;
             caminhoImagem.innerHTML = `<img src="../images/${value}.gif" height=120px alt="caminho${value}" class="monitorImagem" >`;
-            caminhoNome.innerHTML = `<a href="construcao.html" class="linkCaminho">/${value}/</a>`
+            caminhoNome.innerHTML = `<a href="esqueleto.html" class="linkCaminho">/${value}/</a>`
 
             console.log(value);
             break;

@@ -1,0 +1,45 @@
+body{
+    background-color: black;
+    font-family: Tiny5;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+#timerId{
+    color: red;
+    font-size: 6em;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+#espaço-esqueleto{
+    color: red;
+}
+#esqueleto{
+    margin-top: 50vh;
+    animation-name: grow;
+    animation-duration:5s;
+    animation-timing-function: ease-in-out;
+    opacity: 0;
+}
+
+
+@keyframes grow{
+    0% {
+        transform: scale(1, 1) translateY(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(25, 25) translateY(30px);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(50, 50) translateY(100px);
+        opacity: 1;
+    }
+}
