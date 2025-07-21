@@ -4,15 +4,24 @@ function selectCaminho(){
     let monitorTextBox = document.getElementById("monitorTextBox").value;
     const caminhoImagem = document.getElementById("caminhoImagem");
     const caminhoNome = document.getElementById("caminhoNome");
+    let value = "";
     
 
     monitorTextBox = monitorTextBox.toLowerCase();
     
     switch(monitorTextBox){
         case "esqueleto":
-            const value = monitorTextBox;
+            value = monitorTextBox;
             caminhoImagem.innerHTML = `<img src="../images/${value}.gif" height=120px alt="caminho${value}" class="monitorImagem" >`;
-            caminhoNome.innerHTML = `<a href="esqueleto.html" class="linkCaminho">/${value}/</a>`
+            caminhoNome.innerHTML = `<a href="${value}.html" class="linkCaminho">/${value}/</a>`
+
+            console.log(value);
+            break;
+
+        case "bola8":
+            value = monitorTextBox;
+            caminhoImagem.innerHTML = `<img src="../images/${value}.gif" height=120px alt="caminho${value}" class="monitorImagem" >`;
+            caminhoNome.innerHTML = `<a href="${value}.html" class="linkCaminho">/${value}/</a>`
 
             console.log(value);
             break;
