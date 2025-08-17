@@ -8,6 +8,11 @@ body{
     height: 100vh;
 }
 
+#bola8Espaco {
+    position: relative;
+    display: inline-block;
+}
+
 #textoEspaco{
     margin-top: 10px;
     margin-right: 15px;
