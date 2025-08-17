@@ -8,3 +8,68 @@ body{
     height: 100vh;
 }
 
+#textoEspaco{
+    margin-top: 10px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+#bolaTextBox{
+    height: 50px;
+    width: 80%;
+    font-family: Tiny5;
+    border: none;
+    color: aliceblue;
+    background-color: rgb(1, 1, 154);
+    z-index: 0;
+    font-size: 20px;
+   
+}
+
+#buttonEnviar{
+    font-family: Tiny5;
+    border: solid rgb(110, 112, 149);
+    background-color: rgb(86, 86, 132);
+    cursor: pointer;
+    color: rgb(191, 191, 191);
+    box-shadow: -2px -2px;
+    transition: background-color 0.5s;
+}
+
+#buttonEnviar:hover{
+    background-color: rgb(62, 62, 115);
+}
+
+#bola8img{
+    position: relative;
+    display: block;
+    margin: auto;
+}
+
+.textoResposta{
+    display: flex;
+    justify-content: center;
+    color:aliceblue;
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, 250%);
+    text-align: center;
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards; 
+
+}
+
+#aviso{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes fade{
+    100%{opacity: 50%}
+}

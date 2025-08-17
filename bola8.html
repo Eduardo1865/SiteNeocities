@@ -15,10 +15,16 @@
     <main>
         <div id="bola8Espaco">
 
-            <img src="images/truebola8.png">
-            <div id="resposta"></div>
-
-
+            <img src="images/truebola8.png" id="bola8img">
+            <div id="resposta"> <p class="textoResposta">faça uma pergunta</p> </div>
+            <p id="aviso">A bola só responde perguntas de "sim" ou "não".</p>
+            <div id="textoEspaco">
+                <input type="text" id="bolaTextBox">
+                <button onclick="calcResposta()" id="buttonEnviar">Enviar</button>
+                
+            </div>
+            <br>
+            
         </div>
         
     </main>
