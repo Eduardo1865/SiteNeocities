@@ -1,0 +1,185 @@
+body{
+    background-image: url(../images/dither.png); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flow-root;
+    color: white;
+    
+}
+
+
+header{
+    font-family: Pixelify Sans;
+    font-size: 25px;
+    color: yellow;
+    
+    text-align: center;
+    padding: 1px;
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+    
+    
+}
+
+
+header h2{
+    text-shadow: 1px 1px 4px orange;
+    
+}
+
+main{
+    font-family: Tiny5;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    
+    min-height: 70vh;
+    margin-top: 30px;
+   
+    overflow: auto;
+}
+
+main h2{
+    text-align: left;
+    color: white;
+
+}
+#bemvindo{
+    margin: 20px;
+    color: white;
+    
+}
+#bemvindo h4 {
+    font-weight: bold;
+    font-size: 20px;
+}
+.voltarpag{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+    font-family: Tiny5;
+}
+.voltarpag:hover{
+    color: yellow;
+}
+
+.imagens{
+    cursor: pointer;
+}
+
+.imagens:hover{
+    animation-name: grow;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+
+
+.cardMusica{
+    height: 150px;
+    overflow: auto;
+}
+
+.cardMusica .musica{
+    cursor: pointer;
+    float: left;
+}
+
+.cardMusica .titulo{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration:underline;
+    margin-left: 150px;
+    text-align: left;
+    padding: 20px;
+    padding-top: 30px;
+}
+.cardMusica .descricao{
+    margin-left: 170px;
+    text-align: left;
+    
+}
+.link{
+    text-align: left;
+    color: rgb(209, 209, 209);
+    transition: color 0.5s;
+}
+
+.link:hover{
+    color: white;
+}
+
+.slider{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider img{
+    margin: auto;
+    height: 400px;
+    display: none;
+}
+
+img.displaySlide{
+    display: block;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.slider button{
+    font-family: Tiny5;
+    position: absolute;
+    top: 80%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    padding: 10px;
+    background-color: black;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+}
+
+.prev{
+    left:0;
+}
+
+.next{
+    right: 0;
+}
+@keyframes glow{
+    50%{box-shadow: 0px 0px 50px yellow} 
+}
+
+@keyframes rotate{
+    100%{transform: rotatez(360deg)}
+}
+
+@keyframes slideUp{
+    from{transform: translateY(400px);}
+}
+
+@keyframes grow{
+    50%{transform: scale(1.1,1.1);}
+}
+
+@keyframes select{
+    100%{transform: scale(1.1,1.1) rotatez(5deg);}
+}
+
+@media screen and (max-width:600px){
+    main,header,footer{
+        width: 90%;
+    }
+
+    .dropdown .content{
+    
+    bottom:150px;
+    right: 20px;
+    
+    }
+    
+}
