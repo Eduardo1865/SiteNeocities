@@ -12,26 +12,21 @@ header{
     font-family: Pixelify Sans;
     font-size: 25px;
     color: yellow;
-    border: solid rgb(255, 255, 255);
+    
     text-align: center;
     padding: 1px;
     width: 50%;
     margin: auto;
     margin-top: 30px;
-    box-shadow: 3px -3px 2px rgb(143, 143, 143);
+    
     
 }
 
-
-header:hover {
+header h2:hover{
+    text-shadow: 1px 1px 4px orange;
     animation-name: glow;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
-}
-
-header h2{
-    text-shadow: 1px 1px 4px orange;
-    
 }
 
 main{
@@ -39,10 +34,10 @@ main{
     width: 50%;
     margin: auto;
     text-align: center;
-    border: solid white;
+    
     min-height: 70vh;
     margin-top: 30px;
-    box-shadow: 3px -3px 2px rgb(143, 143, 143);
+    
     overflow: auto;
 }
 #bemvindo{
@@ -127,12 +122,12 @@ main{
 footer{
     font-family: Tiny5;
     color: yellow;
-    border: solid rgb(255, 255, 255);
+    
     text-align: center;
     width: 50%;
     margin: auto;
     margin-top: 20px;
-    box-shadow: 3px -3px 2px rgb(143, 143, 143);
+    
 }
 
 footer:hover{
@@ -168,7 +163,7 @@ footer:hover{
 }
 
 @keyframes glow{
-    50%{box-shadow: 0px 0px 50px yellow} 
+    50%{text-shadow: 0px 0px 50px yellow} 
 }
 
 @keyframes rotate{
